@@ -1,4 +1,4 @@
-module githtub.com/bege13mot/chat_app
+module github.com/bege13mot/chat_app/backend
 
 require (
 	4d63.com/gochecknoglobals v0.0.0-20180908201037-5090db600a84 // indirect

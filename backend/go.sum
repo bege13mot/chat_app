@@ -10,6 +10,7 @@ github.com/alexflint/go-scalar v1.0.0 h1:NGupf1XV/Xb04wXskDFzS0KWOLH632W/EO4fAFi
 github.com/alexflint/go-scalar v1.0.0/go.mod h1:GpHzbCOZXEKMEcygYQ5n/aa4Aq84zbxjy3MxYW0gjYw=
 github.com/alexkohler/nakedret v0.0.0-20171106223215-c0e305a4f690 h1:+tfdYWf4oDrj9c0/77f5oDBxZT2EPjS1AJf+PApGNCk=
 github.com/alexkohler/nakedret v0.0.0-20171106223215-c0e305a4f690/go.mod h1:tfDQbtPt67HhBK/6P0yNktIX7peCxfOp0jO9007DrLE=
+github.com/bege13mot/chat_app v0.0.0-20181226120945-5317c11d73fa h1:x8IVdlyOjoe8OHVaP5ufb4yGCbMwZpO4bTH2SVqO9h8=
 github.com/client9/misspell v0.3.4 h1:ta993UF76GwbvJcIo3Y68y/M3WxlpEHPWIGDkJYwzJI=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

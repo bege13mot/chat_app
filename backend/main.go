@@ -1,9 +1,10 @@
 package main
 
 import (
-	"/backend/pkg/websocket"
 	"fmt"
 	"net/http"
+
+	"github.com/bege13mot/chat_app/backend/pkg/websocket"
 )
 
 // WebSocket endpoint
@@ -13,7 +14,7 @@ func serveWs(w http.ResponseWriter, r *http.Request) {
 	ws, err := websocket.Upgrade(w, r)
 
 	if err != nil {
-		fmt.Fprintf(w, "%+V\n", err)
+		fmt.Fprintf(w, "%+v\n", err)
 	}
 
 	//listen indefinitely for new messages coming
