@@ -1,8 +1,7 @@
 package websocket
 
 import (
-	"fmt"
-	"log"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/gorilla/websocket"
 )
@@ -37,6 +36,6 @@ func (c *Client) Read() {
 		}
 		c.Pool.Broadcast <- message
 
-		fmt.Printf("Message Received: %+v\n", message)
+		log.Debug("Message Received: %v", message)
 	}
 }

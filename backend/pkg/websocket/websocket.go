@@ -1,7 +1,7 @@
 package websocket
 
 import (
-	"log"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 
 	"github.com/gorilla/websocket"
@@ -19,7 +19,7 @@ func Upgrade(w http.ResponseWriter, r *http.Request) (*websocket.Conn, error) {
 
 	ws, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
-		log.Println(err)
+		log.Error(err)
 		return ws, err
 	}
 	return ws, nil

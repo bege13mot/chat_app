@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 
 	"github.com/bege13mot/chat_app/pkg/websocket"
@@ -9,13 +9,13 @@ import (
 
 // WebSocket endpoint
 func serveWs(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {
-	fmt.Println("WebSocket Endpoint Hit")
+	log.Debug("WebSocket Endpoint Hit")
 
 	// upgrade this connection to WebSocket
 	conn, err := websocket.Upgrade(w, r)
 
 	if err != nil {
-		fmt.Fprintf(w, "%+v\n", err)
+		log.Error(w, "%+v\n", err)
 	}
 
 	client := &websocket.Client{
@@ -37,7 +37,10 @@ func setupRoutes() {
 }
 
 func main() {
-	fmt.Println("Distributed Chat App v0.01")
+	log.Warning("Distributed Chat App v0.01")
 	setupRoutes()
-	http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		log.Error("Can't start server: ", err)
+	}
 }

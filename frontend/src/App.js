@@ -4,7 +4,6 @@ import {connect, sendMsg } from './api';
 import Header from './components/Header/Header';
 import ChatHistory from './components/ChatHistory/ChatHistory';
 import ChatInput from './components/ChatInput/ChatInput';
-import Message from './components/Message/Message';
 
 class App extends Component {
 
