@@ -36,6 +36,6 @@ func (c *Client) Read() {
 		}
 		c.Pool.Broadcast <- message
 
-		log.Debug("Message Received: %v", message)
+		log.Debugf("Message Received: %v", message)
 	}
 }
